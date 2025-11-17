@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>网页布局实训</title>
+    <style>
+        /* 页面整体容器 */
+        .container {
+            display: flex;
+            margin: 0 auto;
+            width: 90%;
+        }
+        /* 左侧栏样式 */
+        .left-sidebar {
+            width: 200px;
+            border: 1px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+        }
+        .left-img {
+            width: 100px;
+            height: 100px;
+            border: 1px dashed #000;
+        }
+        /* 右侧主内容区样式 */
+        .main-content {
+            flex: 1;
+            margin-left: 20px;
+        }
+        /* 顶部横幅样式 */
+        .top-banner {
+            border: 1px solid #000;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .banner-img {
+            width: 200px;
+            height: 50px;
+            border: 1px dashed #000;
+        }
+        /* 课程列表样式 */
+        .course-list {
+            display: flex;
+            justify-content: space-between;
+        }
+        .course-item {
+            width: 23%;
+            border: 1px solid #000;
+        }
+        .course-img {
+            width: 100%;
+            height: 120px;
+            border: 1px dashed #000;
+        }
+        .course-text {
+            border: 1px dashed #000;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 左侧栏 -->
+        <div class="left-sidebar">
+            <div class="left-img">图片</div>
+        </div>
+        <!-- 右侧主内容区 -->
+        <div class="main-content">
+            <!-- 顶部横幅 -->
+            <div class="top-banner">
+                <div class="banner-img">图片</div>
+            </div>
+            <!-- 课程列表 -->
+            <div class="course-list">
+                <div class="course-item">
+                    <div class="course-img">图片</div>
+                    <div class="course-text">文字</div>
+                </div>
+                <div class="course-item">
+                    <div class="course-img">图片</div>
+                    <div class="course-text">文字</div>
+                </div>
+                <div class="course-item">
+                    <div class="course-img">图片</div>
+                    <div class="course-text">文字</div>
+                </div>
+                <div class="course-item">
+                    <div class="course-img">图片</div>
+                    <div class="course-text">文字</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

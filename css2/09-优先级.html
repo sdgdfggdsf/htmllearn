@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 技巧:选择器选中的标签范围越大，优先级/权重越低 */
+        *{
+           color: red !important;   
+        }
+        /* 通配符选择器  1         */
+        /* !important，提权功能，优先级最高 */
+        div{
+            color: orange;
+        }
+        /* 标签选择器   2*/
+        .box{
+            color: yellow;
+        }
+        /* 类选择器   3*/
+        #text{
+            color: green;
+        }
+        /* id选择器   4*/
+    </style>
+</head>
+<body>
+    <div class="box" id="test" style="color: aquamarine;">div 标签</div>
+    <!-- style行类选择器   5-->
+
+</body>
+</html>
