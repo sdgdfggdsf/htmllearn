@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动漫世界 - 探索二次元的奇妙旅程</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- Tailwind 配置 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366f1', // 主色调：紫色，代表创意和幻想
+                        secondary: '#ec4899', // 辅助色：粉色，增添活力
+                        dark: '#1e293b',
+                        light: '#f8fafc'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .btn-anime {
+                @apply bg-gradient-to-r from-primary to-secondary text-white font-bold py-3 px-8 rounded-full 
+                       shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl
+                       focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50;
+            }
+            .card-anime {
+                @apply bg-white rounded-xl overflow-hidden shadow-lg transform transition-all duration-300 
+                       hover:shadow-2xl hover:-translate-y-1;
+            }
+            .section-transition {
+                @apply transition-opacity duration-500 ease-in-out;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-slate-900 to-slate-800 text-light min-h-screen overflow-x-hidden">
+    <!-- 登录页 -->
+    <section id="login-page" class="min-h-screen flex items-center justify-center p-4 section-transition">
+        <div class="text-center">
+            <h1 class="text-[clamp(2rem,5vw,4rem)] font-bold mb-10 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
+                欢迎来到我的动漫
+            </h1>
+            <button id="enter-btn" class="btn-anime text-xl">
+                点击进入
+            </button>
+        </div>
+    </section>
+
+    <!-- 动漫图片展示页 -->
+    <section id="gallery-page" class="min-h-screen p-6 hidden section-transition">
+        <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold mb-10 text-center">精选动漫作品</h2>
+        
+        <div class="max-w-4xl mx-auto flex flex-col gap-8">
+            <!-- 动漫图片 1 -->
+            <div class="card-anime">
+                <img src="https://pic4.zhimg.com/v2-91ecf6bfe934bcb42916cc3f5c65ae9e_r.jpg?source=172ae18b" alt="动漫作品展示" class="w-full h-auto object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-dark">火影忍者</h3>
+                    <p class="text-slate-600 mt-2">《火影忍者》是日本漫画家岸本齐史创作的代表作，于1999年在《周刊少年JUMP》开始连载，2014年11月10日完结；简体中文版由连环画出版社正式引进出版，截至2014年全球累计发行量超过2亿部。后日谈性质的外传《火影忍者外传 ～第七代火影与绯色的花月～》于2015年在《周刊少年JUMP》22、23合并号短期连载，并衍生出以宇智波佐助和李洛克为主角的派生漫画作品。该作舞台剧曾在东京、大阪及中国澳门等地公演</p>
+                </div>
+            </div>
+            
+            <!-- 动漫图片 2 -->
+            <div class="card-anime">
+                <img src="https://picx.zhimg.com/v2-39225301bf5d3c5034e24ef15ca72fcd_r.jpg?source=172ae18b" alt="动漫作品展示" class="w-full h-auto object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-dark">《灵笼终章》虽迟但到，冉冰为爱化为肉土，艺画要被寄刀片了</h3>
+                    <p class="text-slate-600 mt-2">《灵笼》是由艺画开天与bilibili联合出品的科幻题材网络动画，董相博担任导演及总编剧。
+该动画第一季共16集，上半季于2019年7月13日在B站首播，下半季与特别篇分别于2021年5月1日、15日播出，讲述了浩劫后幸存人类在悬浮灯塔对抗地面邪恶生物及内部矛盾的故事，构建了包含玛娜生态系统、腥荭症等设定的末日世界观。
+作品融合道教元素形成玄幻朋克风格，2018至2022年间先后获得金海豚奖、金龙奖及湖北省广播电视文艺奖。其2019年首集上线10分钟播放量破1600万，上半季创下1.1亿播放量。2023年官方发布新片段引发全网热议，该片段上线14小时播放量破百万，斩获微博、抖音等多平台11个热搜/上升榜，全网传播破亿。第二季定档2025年5月23日播出，每周五在bilibili独家播出</p>
+                </div>
+            </div>
+            
+            <!-- 动漫图片 3 -->
+            <div class="card-anime">
+                <img src="https://p7.itc.cn/images01/20210210/7d5d38f2cefe4816a688663ec62e4531.jpeg" alt="动漫作品展示" class="w-full h-auto object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-dark">《斗罗大陆》动画的“封神篇章</h3>
+                    <p class="text-slate-600 mt-2">第134集“小舞献祭”凭借其极致的情感爆发与视觉震撼，创造了国产动画播放量纪录。 该集上线后单日播放量突破2亿，弹幕总量超500万条，微博话题阅读量24小时内飙升10亿+，登顶全平台热搜榜首，成为国漫史上“破圈级”现象。 视听盛宴：艺术与技术的双重突破</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 右下角按钮 -->
+        <div class="fixed bottom-8 right-8">
+            <button id="news-btn" class="btn-anime">
+                动漫新闻 <i class="fa fa-newspaper-o ml-2"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- 动漫新闻页 -->
+    <section id="news-page" class="min-h-screen p-6 hidden section-transition">
+        <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold mb-10 text-center">最新动漫资讯</h2>
+        
+        <div class="max-w-4xl mx-auto">
+            <div class="card-anime">
+                <img src="https://q8.itc.cn/images01/20250808/805312ad09254fa5968fdc5b6dafa166.jpeg" alt="动漫新闻图片" class="w-full h-auto object-cover">
+                <div class="p-6">
+                    <span class="inline-block bg-primary text-white text-sm px-3 py-1 rounded-full mb-4">最新发布</span>
+                    <h3 class="text-2xl font-bold text-dark mb-4">热门动漫电影更新公布，预计明年夏季</h3>
+                    <p class="text-slate-600 mb-4">
+                        第三季最快有望2026年上线并放出海报 
+                    </p>
+                    <p class="text-slate-600">
+                        导演在采访中表示，这部作品将是系列的一个重要转折点，制作团队投入了大量心血，力求给粉丝带来全新的视觉体验和情感冲击。目前电影的配音工作已经陆续展开，更多详情将在后续逐步公布。
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 右下角按钮 -->
+        <div class="fixed bottom-8 right-8">
+            <button id="message-btn" class="btn-anime">
+                留言 <i class="fa fa-comment-o ml-2"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- 留言板页 -->
+    <section id="message-page" class="min-h-screen p-6 hidden section-transition">
+        <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold mb-10 text-center">动漫爱好者留言板</h2>
+        
+        <div class="max-w-2xl mx-auto">
+            <div class="card-anime p-6">
+                <h3 class="text-xl font-semibold text-dark mb-4">分享你的想法</h3>
+                <textarea id="message-input" rows="6" class="w-full p-4 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary resize-none" 
+                          placeholder="在这里输入你对动漫的看法、推荐或者任何想分享的内容..."></textarea>
+                
+                <div class="mt-4 flex justify-end">
+                    <button id="submit-message" class="bg-primary hover:bg-primary/90 text-white font-bold py-2 px-6 rounded-lg transition-all duration-300">
+                        提交留言 <i class="fa fa-paper-plane ml-1"></i>
+                    </button>
+                </div>
+                
+                <div id="messages-container" class="mt-8">
+                    <h4 class="text-lg font-semibold text-dark mb-4">大家的留言</h4>
+                    <div id="messages-list" class="space-y-4">
+                        <!-- 留言将动态添加到这里 -->
+                        <div class="p-4 bg-slate-100 rounded-lg">
+                            <p class="text-slate-700">"最喜欢的动漫是《火影忍者》，里面的友情和成长故事太感人了！"</p>
+                            <p class="text-right text-sm text-slate-500 mt-2">匿名用户</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // 获取页面元素
+        const loginPage = document.getElementById('login-page');
+        const galleryPage = document.getElementById('gallery-page');
+        const newsPage = document.getElementById('news-page');
+        const messagePage = document.getElementById('message-page');
+        
+        const enterBtn = document.getElementById('enter-btn');
+        const newsBtn = document.getElementById('news-btn');
+        const messageBtn = document.getElementById('message-btn');
+        const submitMessage = document.getElementById('submit-message');
+        const messageInput = document.getElementById('message-input');
+        const messagesList = document.getElementById('messages-list');
+        
+        // 页面切换函数
+        function showPage(page) {
+            // 隐藏所有页面
+            [loginPage, galleryPage, newsPage, messagePage].forEach(p => {
+                p.classList.add('opacity-0');
+                setTimeout(() => {
+                    p.classList.add('hidden');
+                }, 500);
+            });
+            
+            // 显示目标页面
+            setTimeout(() => {
+                page.classList.remove('hidden');
+                setTimeout(() => {
+                    page.classList.remove('opacity-0');
+                }, 50);
+            }, 500);
+        }
+        
+        // 按钮点击事件
+        enterBtn.addEventListener('click', () => showPage(galleryPage));
+        newsBtn.addEventListener('click', () => showPage(newsPage));
+        messageBtn.addEventListener('click', () => showPage(messagePage));
+        
+        // 提交留言功能
+        submitMessage.addEventListener('click', () => {
+            const message = messageInput.value.trim();
+            if (message) {
+                // 创建新留言元素
+                const messageElement = document.createElement('div');
+                messageElement.className = 'p-4 bg-slate-100 rounded-lg transform transition-all duration-300 opacity-0';
+                messageElement.innerHTML = `
+                    <p class="text-slate-700">"${message}"</p>
+                    <p class="text-right text-sm text-slate-500 mt-2">匿名用户</p>
+                `;
+                
+                // 添加到留言列表并显示动画
+                messagesList.prepend(messageElement);
+                setTimeout(() => {
+                    messageElement.classList.remove('opacity-0');
+                }, 50);
+                
+                // 清空输入框
+                messageInput.value = '';
+                
+                // 简单的成功提示
+                alert('留言提交成功！');
+            } else {
+                alert('请输入留言内容');
+            }
+        });
+        
+        // 支持回车键提交留言
+        messageInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                submitMessage.click();
+            }
+        });
+    </script>
+</body>
+</html>
